@@ -1,5 +1,4 @@
 name: Slowloris
-
 on:
   push:
     branches:
